@@ -1,0 +1,320 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3B9C25661632D1C2004B0891 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9C25651632D1C2004B0891 /* UIKit.framework */; };
+		3B9C25681632D1C2004B0891 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9C25671632D1C2004B0891 /* Foundation.framework */; };
+		3B9C256A1632D1C2004B0891 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9C25691632D1C2004B0891 /* CoreGraphics.framework */; };
+		3B9C25701632D1C2004B0891 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3B9C256E1632D1C2004B0891 /* InfoPlist.strings */; };
+		3B9C25721632D1C2004B0891 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9C25711632D1C2004B0891 /* main.m */; };
+		3B9C25761632D1C2004B0891 /* ENAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9C25751632D1C2004B0891 /* ENAppDelegate.m */; };
+		3B9C25781632D1C2004B0891 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B9C25771632D1C2004B0891 /* Default.png */; };
+		3B9C257A1632D1C2004B0891 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B9C25791632D1C2004B0891 /* Default@2x.png */; };
+		3B9C257C1632D1C2004B0891 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3B9C257B1632D1C2004B0891 /* Default-568h@2x.png */; };
+		3B9C257F1632D1C2004B0891 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B9C257D1632D1C2004B0891 /* MainStoryboard_iPhone.storyboard */; };
+		3B9C25821632D1C2004B0891 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B9C25801632D1C2004B0891 /* MainStoryboard_iPad.storyboard */; };
+		3B9C25851632D1C2004B0891 /* ENMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9C25841632D1C2004B0891 /* ENMainViewController.m */; };
+		3B9C25881632D1C2004B0891 /* ENFlipsideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B9C25871632D1C2004B0891 /* ENFlipsideViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3B9C25611632D1C2004B0891 /* Number To Word.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Number To Word.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B9C25651632D1C2004B0891 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		3B9C25671632D1C2004B0891 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3B9C25691632D1C2004B0891 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3B9C256D1632D1C2004B0891 /* Number To Word-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Number To Word-Info.plist"; sourceTree = "<group>"; };
+		3B9C256F1632D1C2004B0891 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3B9C25711632D1C2004B0891 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3B9C25731632D1C2004B0891 /* Number To Word-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Number To Word-Prefix.pch"; sourceTree = "<group>"; };
+		3B9C25741632D1C2004B0891 /* ENAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ENAppDelegate.h; sourceTree = "<group>"; };
+		3B9C25751632D1C2004B0891 /* ENAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ENAppDelegate.m; sourceTree = "<group>"; };
+		3B9C25771632D1C2004B0891 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		3B9C25791632D1C2004B0891 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		3B9C257B1632D1C2004B0891 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		3B9C257E1632D1C2004B0891 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		3B9C25811632D1C2004B0891 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		3B9C25831632D1C2004B0891 /* ENMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ENMainViewController.h; sourceTree = "<group>"; };
+		3B9C25841632D1C2004B0891 /* ENMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ENMainViewController.m; sourceTree = "<group>"; };
+		3B9C25861632D1C2004B0891 /* ENFlipsideViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ENFlipsideViewController.h; sourceTree = "<group>"; };
+		3B9C25871632D1C2004B0891 /* ENFlipsideViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ENFlipsideViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3B9C255E1632D1C2004B0891 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B9C25661632D1C2004B0891 /* UIKit.framework in Frameworks */,
+				3B9C25681632D1C2004B0891 /* Foundation.framework in Frameworks */,
+				3B9C256A1632D1C2004B0891 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3B9C25561632D1C2004B0891 = {
+			isa = PBXGroup;
+			children = (
+				3B9C256B1632D1C2004B0891 /* Number To Word */,
+				3B9C25641632D1C2004B0891 /* Frameworks */,
+				3B9C25621632D1C2004B0891 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3B9C25621632D1C2004B0891 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3B9C25611632D1C2004B0891 /* Number To Word.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3B9C25641632D1C2004B0891 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B9C25651632D1C2004B0891 /* UIKit.framework */,
+				3B9C25671632D1C2004B0891 /* Foundation.framework */,
+				3B9C25691632D1C2004B0891 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3B9C256B1632D1C2004B0891 /* Number To Word */ = {
+			isa = PBXGroup;
+			children = (
+				3B9C25741632D1C2004B0891 /* ENAppDelegate.h */,
+				3B9C25751632D1C2004B0891 /* ENAppDelegate.m */,
+				3B9C257D1632D1C2004B0891 /* MainStoryboard_iPhone.storyboard */,
+				3B9C25801632D1C2004B0891 /* MainStoryboard_iPad.storyboard */,
+				3B9C25831632D1C2004B0891 /* ENMainViewController.h */,
+				3B9C25841632D1C2004B0891 /* ENMainViewController.m */,
+				3B9C25861632D1C2004B0891 /* ENFlipsideViewController.h */,
+				3B9C25871632D1C2004B0891 /* ENFlipsideViewController.m */,
+				3B9C256C1632D1C2004B0891 /* Supporting Files */,
+			);
+			path = "Number To Word";
+			sourceTree = "<group>";
+		};
+		3B9C256C1632D1C2004B0891 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3B9C256D1632D1C2004B0891 /* Number To Word-Info.plist */,
+				3B9C256E1632D1C2004B0891 /* InfoPlist.strings */,
+				3B9C25711632D1C2004B0891 /* main.m */,
+				3B9C25731632D1C2004B0891 /* Number To Word-Prefix.pch */,
+				3B9C25771632D1C2004B0891 /* Default.png */,
+				3B9C25791632D1C2004B0891 /* Default@2x.png */,
+				3B9C257B1632D1C2004B0891 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3B9C25601632D1C2004B0891 /* Number To Word */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B9C258B1632D1C2004B0891 /* Build configuration list for PBXNativeTarget "Number To Word" */;
+			buildPhases = (
+				3B9C255D1632D1C2004B0891 /* Sources */,
+				3B9C255E1632D1C2004B0891 /* Frameworks */,
+				3B9C255F1632D1C2004B0891 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Number To Word";
+			productName = "Number To Word";
+			productReference = 3B9C25611632D1C2004B0891 /* Number To Word.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3B9C25581632D1C2004B0891 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = EN;
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "Ning Ke";
+			};
+			buildConfigurationList = 3B9C255B1632D1C2004B0891 /* Build configuration list for PBXProject "Number To Word" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3B9C25561632D1C2004B0891;
+			productRefGroup = 3B9C25621632D1C2004B0891 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B9C25601632D1C2004B0891 /* Number To Word */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3B9C255F1632D1C2004B0891 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B9C25701632D1C2004B0891 /* InfoPlist.strings in Resources */,
+				3B9C25781632D1C2004B0891 /* Default.png in Resources */,
+				3B9C257A1632D1C2004B0891 /* Default@2x.png in Resources */,
+				3B9C257C1632D1C2004B0891 /* Default-568h@2x.png in Resources */,
+				3B9C257F1632D1C2004B0891 /* MainStoryboard_iPhone.storyboard in Resources */,
+				3B9C25821632D1C2004B0891 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3B9C255D1632D1C2004B0891 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B9C25721632D1C2004B0891 /* main.m in Sources */,
+				3B9C25761632D1C2004B0891 /* ENAppDelegate.m in Sources */,
+				3B9C25851632D1C2004B0891 /* ENMainViewController.m in Sources */,
+				3B9C25881632D1C2004B0891 /* ENFlipsideViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3B9C256E1632D1C2004B0891 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B9C256F1632D1C2004B0891 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		3B9C257D1632D1C2004B0891 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B9C257E1632D1C2004B0891 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		3B9C25801632D1C2004B0891 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3B9C25811632D1C2004B0891 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3B9C25891632D1C2004B0891 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3B9C258A1632D1C2004B0891 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3B9C258C1632D1C2004B0891 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Number To Word/Number To Word-Prefix.pch";
+				INFOPLIST_FILE = "Number To Word/Number To Word-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		3B9C258D1632D1C2004B0891 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Number To Word/Number To Word-Prefix.pch";
+				INFOPLIST_FILE = "Number To Word/Number To Word-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3B9C255B1632D1C2004B0891 /* Build configuration list for PBXProject "Number To Word" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B9C25891632D1C2004B0891 /* Debug */,
+				3B9C258A1632D1C2004B0891 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B9C258B1632D1C2004B0891 /* Build configuration list for PBXNativeTarget "Number To Word" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3B9C258C1632D1C2004B0891 /* Debug */,
+				3B9C258D1632D1C2004B0891 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3B9C25581632D1C2004B0891 /* Project object */;
+}
