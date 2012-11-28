@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B4DBF6F163442620074F94F /* ENConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B4DBF6E163442620074F94F /* ENConverter.m */; };
 		3B9C25661632D1C2004B0891 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9C25651632D1C2004B0891 /* UIKit.framework */; };
 		3B9C25681632D1C2004B0891 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9C25671632D1C2004B0891 /* Foundation.framework */; };
 		3B9C256A1632D1C2004B0891 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B9C25691632D1C2004B0891 /* CoreGraphics.framework */; };
@@ -23,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B4DBF6E163442620074F94F /* ENConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENConverter.m; sourceTree = "<group>"; };
+		3B4DBF701634427D0074F94F /* ENConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENConverter.h; sourceTree = "<group>"; };
 		3B9C25611632D1C2004B0891 /* Number To Word.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Number To Word.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B9C25651632D1C2004B0891 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3B9C25671632D1C2004B0891 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -88,6 +91,8 @@
 		3B9C256B1632D1C2004B0891 /* Number To Word */ = {
 			isa = PBXGroup;
 			children = (
+				3B4DBF701634427D0074F94F /* ENConverter.h */,
+				3B4DBF6E163442620074F94F /* ENConverter.m */,
 				3B9C25741632D1C2004B0891 /* ENAppDelegate.h */,
 				3B9C25751632D1C2004B0891 /* ENAppDelegate.m */,
 				3B9C257D1632D1C2004B0891 /* MainStoryboard_iPhone.storyboard */,
@@ -187,6 +192,7 @@
 				3B9C25761632D1C2004B0891 /* ENAppDelegate.m in Sources */,
 				3B9C25851632D1C2004B0891 /* ENMainViewController.m in Sources */,
 				3B9C25881632D1C2004B0891 /* ENFlipsideViewController.m in Sources */,
+				3B4DBF6F163442620074F94F /* ENConverter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +319,7 @@
 				3B9C258D1632D1C2004B0891 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
