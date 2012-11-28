@@ -282,8 +282,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Number To Word/Num2Word-Prefix.pch";
-				INFOPLIST_FILE = "Number To Word/Num2Word-Info.plist";
+				GCC_PREFIX_HEADER = "Num2Word/Num2Word-Prefix.pch";
+				INFOPLIST_FILE = "Num2Word/Num2Word-Info.plist";
 				PRODUCT_NAME = Num2Word;
 				WRAPPER_EXTENSION = app;
 			};
@@ -293,8 +293,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Number To Word/Num2Word-Prefix.pch";
-				INFOPLIST_FILE = "Number To Word/Num2Word-Info.plist";
+				GCC_PREFIX_HEADER = "Num2Word/Num2Word-Prefix.pch";
+				INFOPLIST_FILE = "Num2Word/Num2Word-Info.plist";
 				PRODUCT_NAME = Num2Word;
 				WRAPPER_EXTENSION = app;
 			};
