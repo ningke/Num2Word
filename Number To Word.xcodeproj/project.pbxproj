@@ -64,7 +64,7 @@
 		3B9C25561632D1C2004B0891 = {
 			isa = PBXGroup;
 			children = (
-				3B9C256B1632D1C2004B0891 /* Number To Word */,
+				3B9C256B1632D1C2004B0891 /* Num2Word */,
 				3B9C25641632D1C2004B0891 /* Frameworks */,
 				3B9C25621632D1C2004B0891 /* Products */,
 			);
@@ -88,7 +88,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		3B9C256B1632D1C2004B0891 /* Number To Word */ = {
+		3B9C256B1632D1C2004B0891 /* Num2Word */ = {
 			isa = PBXGroup;
 			children = (
 				3B4DBF701634427D0074F94F /* ENConverter.h */,
@@ -103,6 +103,7 @@
 				3B9C25871632D1C2004B0891 /* ENFlipsideViewController.m */,
 				3B9C256C1632D1C2004B0891 /* Supporting Files */,
 			);
+			name = Num2Word;
 			path = "Number To Word";
 			sourceTree = "<group>";
 		};
