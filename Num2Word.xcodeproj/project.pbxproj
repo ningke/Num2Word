@@ -26,14 +26,14 @@
 /* Begin PBXFileReference section */
 		3B4DBF6E163442620074F94F /* ENConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ENConverter.m; sourceTree = "<group>"; };
 		3B4DBF701634427D0074F94F /* ENConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ENConverter.h; sourceTree = "<group>"; };
-		3B9C25611632D1C2004B0891 /* Number To Word.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Number To Word.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3B9C25611632D1C2004B0891 /* Num2Word.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Num2Word.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B9C25651632D1C2004B0891 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		3B9C25671632D1C2004B0891 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3B9C25691632D1C2004B0891 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		3B9C256D1632D1C2004B0891 /* Number To Word-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Number To Word-Info.plist"; sourceTree = "<group>"; };
+		3B9C256D1632D1C2004B0891 /* Num2Word-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Num2Word-Info.plist"; sourceTree = "<group>"; };
 		3B9C256F1632D1C2004B0891 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3B9C25711632D1C2004B0891 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		3B9C25731632D1C2004B0891 /* Number To Word-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Number To Word-Prefix.pch"; sourceTree = "<group>"; };
+		3B9C25731632D1C2004B0891 /* Num2Word-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Num2Word-Prefix.pch"; sourceTree = "<group>"; };
 		3B9C25741632D1C2004B0891 /* ENAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ENAppDelegate.h; sourceTree = "<group>"; };
 		3B9C25751632D1C2004B0891 /* ENAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ENAppDelegate.m; sourceTree = "<group>"; };
 		3B9C25771632D1C2004B0891 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -73,7 +73,7 @@
 		3B9C25621632D1C2004B0891 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3B9C25611632D1C2004B0891 /* Number To Word.app */,
+				3B9C25611632D1C2004B0891 /* Num2Word.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,17 +103,16 @@
 				3B9C25871632D1C2004B0891 /* ENFlipsideViewController.m */,
 				3B9C256C1632D1C2004B0891 /* Supporting Files */,
 			);
-			name = Num2Word;
-			path = "Number To Word";
+			path = Num2Word;
 			sourceTree = "<group>";
 		};
 		3B9C256C1632D1C2004B0891 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				3B9C256D1632D1C2004B0891 /* Number To Word-Info.plist */,
+				3B9C256D1632D1C2004B0891 /* Num2Word-Info.plist */,
 				3B9C256E1632D1C2004B0891 /* InfoPlist.strings */,
 				3B9C25711632D1C2004B0891 /* main.m */,
-				3B9C25731632D1C2004B0891 /* Number To Word-Prefix.pch */,
+				3B9C25731632D1C2004B0891 /* Num2Word-Prefix.pch */,
 				3B9C25771632D1C2004B0891 /* Default.png */,
 				3B9C25791632D1C2004B0891 /* Default@2x.png */,
 				3B9C257B1632D1C2004B0891 /* Default-568h@2x.png */,
@@ -124,9 +123,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		3B9C25601632D1C2004B0891 /* Number To Word */ = {
+		3B9C25601632D1C2004B0891 /* Num2Word */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3B9C258B1632D1C2004B0891 /* Build configuration list for PBXNativeTarget "Number To Word" */;
+			buildConfigurationList = 3B9C258B1632D1C2004B0891 /* Build configuration list for PBXNativeTarget "Num2Word" */;
 			buildPhases = (
 				3B9C255D1632D1C2004B0891 /* Sources */,
 				3B9C255E1632D1C2004B0891 /* Frameworks */,
@@ -136,9 +135,9 @@
 			);
 			dependencies = (
 			);
-			name = "Number To Word";
+			name = Num2Word;
 			productName = "Number To Word";
-			productReference = 3B9C25611632D1C2004B0891 /* Number To Word.app */;
+			productReference = 3B9C25611632D1C2004B0891 /* Num2Word.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -151,7 +150,7 @@
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Ning Ke";
 			};
-			buildConfigurationList = 3B9C255B1632D1C2004B0891 /* Build configuration list for PBXProject "Number To Word" */;
+			buildConfigurationList = 3B9C255B1632D1C2004B0891 /* Build configuration list for PBXProject "Num2Word" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -163,7 +162,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				3B9C25601632D1C2004B0891 /* Number To Word */,
+				3B9C25601632D1C2004B0891 /* Num2Word */,
 			);
 		};
 /* End PBXProject section */
@@ -283,9 +282,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Number To Word/Number To Word-Prefix.pch";
-				INFOPLIST_FILE = "Number To Word/Number To Word-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Number To Word/Num2Word-Prefix.pch";
+				INFOPLIST_FILE = "Number To Word/Num2Word-Info.plist";
+				PRODUCT_NAME = Num2Word;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -294,9 +293,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Number To Word/Number To Word-Prefix.pch";
-				INFOPLIST_FILE = "Number To Word/Number To Word-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				GCC_PREFIX_HEADER = "Number To Word/Num2Word-Prefix.pch";
+				INFOPLIST_FILE = "Number To Word/Num2Word-Info.plist";
+				PRODUCT_NAME = Num2Word;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -304,7 +303,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		3B9C255B1632D1C2004B0891 /* Build configuration list for PBXProject "Number To Word" */ = {
+		3B9C255B1632D1C2004B0891 /* Build configuration list for PBXProject "Num2Word" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3B9C25891632D1C2004B0891 /* Debug */,
@@ -313,7 +312,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3B9C258B1632D1C2004B0891 /* Build configuration list for PBXNativeTarget "Number To Word" */ = {
+		3B9C258B1632D1C2004B0891 /* Build configuration list for PBXNativeTarget "Num2Word" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3B9C258C1632D1C2004B0891 /* Debug */,
