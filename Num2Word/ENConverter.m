@@ -104,7 +104,7 @@ static NSString *AmericanSeparator = @" ";
     int length = cnt - start - 1;
     idx = length * value + start;
     k = [keys objectAtIndex:idx];
-    printf("slider value %f longScale %d => Idx %d Key %d\n", value, longScale, idx, [k integerValue]);
+    //printf("slider value %f longScale %d => Idx %d Key %d\n", value, longScale, idx, [k integerValue]);
     return [[NSString alloc] initWithFormat:@"%@", [dict objectForKey:k]];
 }
 
@@ -140,7 +140,7 @@ static NSString *AmericanSeparator = @" ";
     // Use a middle value (a float between idx and idx + 1)
     float mid = idx + 0.5f;
     res = (mid - (float)start) / length;
-    printf("%s: ord %s idx %d value %f\n", __func__, [ord cStringUsingEncoding:[NSString defaultCStringEncoding]], idx, res);
+    //printf("%s: ord %s idx %d value %f\n", __func__, [ord cStringUsingEncoding:[NSString defaultCStringEncoding]], idx, res);
     return res;
 }
 
@@ -157,11 +157,12 @@ static NSString *AmericanSeparator = @" ";
         digits = [digits arrayByAddingObject:[NSNumber numberWithUnsignedInt:remainder]];
         num = quotient;
     } while (quotient);
-    
+    /*
     for (id elem in digits) {
         printf("%u ", [elem unsignedIntValue]);
     }
     printf("\n");
+     */
     return digits;
 }
 
@@ -301,8 +302,12 @@ static NSString *AmericanSeparator = @" ";
             res = seg;
         }
         digits = [pop3res objectAtIndex:1];
-        printf("((%d %d %d), %s))\n", [o intValue], [t intValue], [h intValue], [digits cStringUsingEncoding:[NSString defaultCStringEncoding]]);
+        //printf("((%d %d %d), %s))\n", [o intValue], [t intValue], [h intValue], [digits cStringUsingEncoding:[NSString defaultCStringEncoding]]);
         idx += 3;
+    }
+    
+    if ([res length]) {
+        res = [NSString stringWithFormat:@"%@%@", [[res substringToIndex:1] uppercaseString], [res substringFromIndex:1]];
     }
     return res;
 }
@@ -323,9 +328,7 @@ static NSString *AmericanSeparator = @" ";
         }
         curdigits = [digits substringFromIndex:newlen];
         curname = [self segment:curdigits];
-        printf("curname<%s> res<%s> curOrder<%s>\n", [curname cStringUsingEncoding:[NSString defaultCStringEncoding]],
-               [res cStringUsingEncoding:[NSString defaultCStringEncoding]],
-               [curOrder cStringUsingEncoding:[NSString defaultCStringEncoding]]);
+        //printf("curname<%s> res<%s> curOrder<%s>\n", [curname cStringUsingEncoding:[NSString defaultCStringEncoding]], [res cStringUsingEncoding:[NSString defaultCStringEncoding]], [curOrder cStringUsingEncoding:[NSString defaultCStringEncoding]]);
         if ([res compare:zero] == NSOrderedSame) {
             res = @"";
         }
