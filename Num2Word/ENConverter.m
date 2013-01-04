@@ -25,7 +25,7 @@ static NSString *AmericanSeparator = @" ";
     singles = [NSArray arrayWithObjects: @"zero", @"one", @"two", @"three",
                @"four", @"five", @"six", @"seven", @"eight", @"nine", nil];
     
-    teens = [NSArray arrayWithObjects: @"ten", @"elevent", @"twelve", @"thirteen",
+    teens = [NSArray arrayWithObjects: @"ten", @"eleven", @"twelve", @"thirteen",
              @"fourteen", @"fifteen", @"sixteen", @"seventeen", @"eighteen", @"nineteen", nil];
     
     tens = [NSArray arrayWithObjects: @"twenty", @"thirty", @"forty", @"fifty",
@@ -142,28 +142,6 @@ static NSString *AmericanSeparator = @" ";
     res = (mid - (float)start) / length;
     //printf("%s: ord %s idx %d value %f\n", __func__, [ord cStringUsingEncoding:[NSString defaultCStringEncoding]], idx, res);
     return res;
-}
-
-+ (NSArray *)getDigits:(NSNumber *)nsnum {
-    int base = 10;
-    NSArray *digits = [NSArray array];
-    unsigned long long num = [nsnum unsignedLongLongValue];
-    unsigned long long quotient;
-    unsigned int remainder;
-    
-    do {
-        quotient = num / base;
-        remainder = num % base;
-        digits = [digits arrayByAddingObject:[NSNumber numberWithUnsignedInt:remainder]];
-        num = quotient;
-    } while (quotient);
-    /*
-    for (id elem in digits) {
-        printf("%u ", [elem unsignedIntValue]);
-    }
-    printf("\n");
-     */
-    return digits;
 }
 
 - (NSString *)threeDigitRepWithOnes:(unsigned int)ones tens:(unsigned int)tns hundreds:(unsigned int)hds {
