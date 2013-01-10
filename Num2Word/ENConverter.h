@@ -16,6 +16,8 @@
 - (NSString *)englishRep;
 - (NSString *)threeDigitRepWithOnes:(unsigned int)ones tens:(unsigned int)tns hundreds:(unsigned int)hds;
 
++ (NSString *)formatNumber:(NSString *)num;
++ (NSString *)parseNumber:(NSString *)numstr;
 + (BOOL)defaultUseLongScale;
 + (NSString *)getUnitStringFromValue:(float)value LongScale:(BOOL)longScale;
 + (float)getOrderValue:(NSString *)ord LongScale:(BOOL)longScale;

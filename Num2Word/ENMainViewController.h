@@ -11,6 +11,7 @@
 @interface ENMainViewController : UIViewController <ENFlipsideViewControllerDelegate, UIPopoverControllerDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *numberField;
+@property (weak, nonatomic) IBOutlet UILabel *formattedNumber;
 @property (weak, nonatomic) IBOutlet UITextView *englishWord;
 @property (copy, nonatomic) NSString *arabicNumber;
 @property BOOL useLongScale;

@@ -46,27 +46,39 @@
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="f45-vj-ik9">
                                 <color key="backgroundColor" red="0.73534549490000001" green="0.80219295599999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="251" id="Apc-rV-loI"/>
-                                    <constraint firstAttribute="height" constant="235" id="WMx-ix-dMv"/>
+                                    <constraint firstAttribute="height" constant="274" id="Pod-XJ-FcO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pNV-d5-yYZ">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="CrL-8U-m02"/>
+                                    <constraint firstAttribute="width" constant="251" id="Eqy-mY-JG3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.73534549490000001" green="0.80219295599999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
+                            <constraint firstItem="f45-vj-ik9" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="0fP-2F-7Cn"/>
+                            <constraint firstItem="pNV-d5-yYZ" firstAttribute="top" secondItem="RN1-lC-fRj" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="4t1-4H-cOe"/>
+                            <constraint firstItem="f45-vj-ik9" firstAttribute="top" secondItem="pNV-d5-yYZ" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="7gB-Kd-ocq"/>
                             <constraint firstAttribute="bottom" secondItem="10" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="CZI-CR-Hbg"/>
-                            <constraint firstItem="Bje-9r-NSs" firstAttribute="top" secondItem="3" secondAttribute="top" constant="52" id="NIU-H9-9IH"/>
+                            <constraint firstItem="Bje-9r-NSs" firstAttribute="top" secondItem="3" secondAttribute="top" constant="20" symbolic="YES" type="default" id="OKQ-e9-bcC"/>
                             <constraint firstItem="RN1-lC-fRj" firstAttribute="centerX" secondItem="Bje-9r-NSs" secondAttribute="centerX" type="default" id="Q2Z-Vj-ceI"/>
                             <constraint firstAttribute="trailing" secondItem="10" secondAttribute="trailing" constant="28" id="TJy-Os-YDl"/>
-                            <constraint firstItem="Bje-9r-NSs" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="26" id="WBh-BV-cHt"/>
-                            <constraint firstItem="f45-vj-ik9" firstAttribute="centerX" secondItem="3" secondAttribute="centerX" type="default" id="bDb-DC-4kr"/>
-                            <constraint firstItem="RN1-lC-fRj" firstAttribute="top" secondItem="Bje-9r-NSs" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="fqy-ij-BO7"/>
-                            <constraint firstItem="f45-vj-ik9" firstAttribute="top" secondItem="3" secondAttribute="top" constant="130" id="yfV-v0-Gkb"/>
+                            <constraint firstItem="RN1-lC-fRj" firstAttribute="top" secondItem="Bje-9r-NSs" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="Tcc-ZT-3SZ"/>
+                            <constraint firstItem="Bje-9r-NSs" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="26" id="Ytu-f2-MEn"/>
+                            <constraint firstItem="f45-vj-ik9" firstAttribute="leading" secondItem="pNV-d5-yYZ" secondAttribute="leading" type="default" id="qrg-LA-BBs"/>
+                            <constraint firstItem="f45-vj-ik9" firstAttribute="trailing" secondItem="pNV-d5-yYZ" secondAttribute="trailing" type="default" id="tHv-pc-ZSr"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="englishWord" destination="f45-vj-ik9" id="Fyy-kV-zvd"/>
+                        <outlet property="formattedNumber" destination="pNV-d5-yYZ" id="l3g-im-YxY"/>
                         <outlet property="numberField" destination="RN1-lC-fRj" id="PTw-Ft-Whe"/>
                     </connections>
                 </viewController>
@@ -153,29 +165,6 @@
             <point key="canvasLocation" x="368" y="182"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="ENFlipsideViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ENFlipsideViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="done:"/>
-                <relationship kind="action" name="unitChanged:" candidateClass="UISlider"/>
-                <relationship kind="outlet" name="unitLabel" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="unitSlider" candidateClass="UISlider"/>
-                <relationship kind="outlet" name="useLongScale" candidateClass="UISwitch"/>
-            </relationships>
-        </class>
-        <class className="ENMainViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ENMainViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="toEnglish:"/>
-                <relationship kind="outlet" name="englishWord" candidateClass="UITextView"/>
-                <relationship kind="outlet" name="numberField" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

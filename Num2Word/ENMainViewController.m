@@ -70,9 +70,34 @@
     // Don't use NSNumberFormatter or NSDecimalNumber and such to convert into number.
     // Those methods don't work for very large numbers.
     // First make sure only numbers are in the text field
-    self.arabicNumber = [self.numberField.text stringByTrimmingCharactersInSet:
-                         [NSCharacterSet whitespaceAndNewlineCharacterSet]];
+    NSString *numstr = self.numberField.text;
     
+    // Remove everything but digits
+    numstr = [ENConverter parseNumber:numstr];
+    if ([numstr compare:@""] == NSOrderedSame) {
+        self.arabicNumber = @"0";
+        self.formattedNumber.text = @"";
+        self.englishWord.text = @"";
+        return;
+    }
+
+    // Remove leading zeros
+    NSUInteger i = 0;
+    while (i < [numstr length] && [numstr characterAtIndex:i] == '0') {
+        i += 1;
+    }
+    if (i == [numstr length]) {
+        // all zeros
+        numstr = @"0";
+    } else {
+        numstr = [numstr substringFromIndex:i];
+    }
+
+    self.arabicNumber = numstr;
+
+    // format number to "###,###" format
+    self.formattedNumber.text = [ENConverter formatNumber:numstr];
+
     // Get English from the number
     ENConverter *conv = [[ENConverter alloc] initWithString:self.arabicNumber Longscale:self.useLongScale LargestUnit:self.largestUnit];
     NSString *engstr = [conv englishRep];

@@ -239,6 +239,79 @@ static NSString *AmericanSeparator = @" ";
             nil];
 }
 
+// Parse a number string.
+// Removes any leading white spaces, save digits from 0 - 9, and stops at the first non-digit character
+// Returns the resulting number string.
++ (NSString *)parseNumber:(NSString *)numstr {
+    NSCharacterSet *digitSet = [NSCharacterSet decimalDigitCharacterSet];
+    NSCharacterSet *spaceSet = [NSCharacterSet whitespaceCharacterSet];
+    NSUInteger i;
+    NSUInteger start = 0;
+    bool leadingSpaces = true;
+    bool digitsFound = false;
+
+    for (i = 0; i < [numstr length]; i++) {
+        unichar c = [numstr characterAtIndex:i];
+
+        if ([spaceSet characterIsMember:c]) {
+            if (!leadingSpaces) {
+                break;
+            }
+        } else if ([digitSet characterIsMember:c]) {
+            if (leadingSpaces) {
+                digitsFound = true;
+                start = i;
+                leadingSpaces = false;
+            }
+        } else {
+            break;
+        }
+    }
+    if (digitsFound) {
+        numstr = [numstr substringWithRange:NSMakeRange(start, (i - start))];
+    } else {
+        numstr = @"";
+    }
+    
+    return numstr;
+}
+
++ (NSString *)formatNumber:(NSString *)num {
+    NSString *formatted = @"";
+    NSString *rest = num;
+
+    while ([rest length]) {
+        NSArray *popped = [ENConverter pop3:rest];
+        NSArray *trio = popped[0];
+        rest = popped[1];
+
+        NSString *sep;
+        if ([formatted length]) {
+            sep = @",";
+        } else {
+            sep = @"";
+        }
+        
+        formatted = [[NSString alloc] initWithFormat:@"%@%@%@%@%@",
+                     [trio[2] stringValue], [trio[1] stringValue], [trio[0] stringValue],
+                     sep, formatted];
+    }
+    
+    // Remove leading zeros (and commas) unless it is zero
+    NSUInteger i = 0;
+    while (i < [formatted length] && ([formatted characterAtIndex:i] == '0' || [formatted characterAtIndex:i] == ',')) {
+        i += 1;
+    }
+    
+    if (i < formatted.length) {
+        formatted = [formatted substringFromIndex:i];
+    } else {
+        formatted = @"0";
+    }
+    
+    return formatted;
+};
+
 - (NSString *)segment:(NSString *)digits {
     NSString *res = @"";
     int idx = 0;
